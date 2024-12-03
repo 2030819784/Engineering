@@ -81,7 +81,6 @@ module.exports = {
     //dev HMR
     devServer: {
         hot: true,
-        static: './dist/demo'
     },
     resolve: {
         alias: {
