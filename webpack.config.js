@@ -37,14 +37,6 @@ module.exports = {
                             }
                         }
                     },
-                    {
-                        loader: 'custom-loader',
-                        options: {
-                            color: 'gray',
-                            disable: true
-                        }
-                    },
-                    'log-loader',
                     'sass-loader',
                     'postcss-loader'
                 ],
@@ -78,10 +70,7 @@ module.exports = {
         ],
     },
     resolveLoader: {
-        alias: {
-            'log-loader': path.resolve(__dirname, './script/loader/log.js'),
-            'custom-loader': path.resolve(__dirname, './script/loader/demo-loader/demo.js')
-        }
+        alias: {}
     },
     //优化 
     optimization: {

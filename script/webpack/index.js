@@ -5,10 +5,9 @@ const WebpackDevServer = require('webpack-dev-server')
 
 const prodConfig = require('./webpack.prod.js')
 const devConfig = require('./webpack.dev.js')
-const analyzerConfig = require('./webpack.analyzer.js')
 
 const { getIPAddress } = require('../util.js')
-const { mode, projectName, port } = process.env
+const { mode, port } = process.env
 
 // 开发
 if (mode === 'dev') {
